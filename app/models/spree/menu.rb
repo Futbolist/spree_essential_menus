@@ -45,7 +45,7 @@ class Spree::Menu < ActiveRecord::Base
   private
     def get_static_page_path
       if attribute_present?("page_id")
-        self.url = self.page.path
+        self.url = self.page.link
       end
     end
 end

@@ -1,5 +1,43 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+  menus: Menu
+  menu_bars: Menu bars
+  menu_images: Menu images
+  action: Action
+  create: Create
+  update: Update
+  cancel: Cancel
+  or: or
+  optional: Optional
+
+  spree:
+    admin:
+      menus:
+        index:
+          listing_menus: Menu on page
+          static_path: Static path
+        new_menu: "New menu element"
+        edit_menu: "Edit menu"
+        list_of_menus: "List menu elements"
+        link_text: "Link text"
+        url: "Url"
+        explain_url: "If you choose a static page, complete automatically. Otherwise - type in the address."
+        visible: "Visible?"
+        explain_visible: "If selected, the item appears on the menu"
+        parent_id: "Parent element"
+        explain_parent_id: "Select the item for which you want to find this item."
+        select_parent: "Select parent item"
+        menu_bar_id: "Choose menu bar"
+        select_menu_bar_id: "Select the destination from the list"
+        explain_menu_bar_id: "Select the bar at which the element locates"
+        page_id: "Static page"
+        select_page_id: "Select a static page"
+        explain_page_id: "Select a static page, referred to by the item"
+        sequence: "Sequence"
+        menu_image: "Menu image"
+      menu_bars:
+        list_of_menu_bars: "List of menu bars"
+        editing_menu_bar: "Edit menu bar"
+        new_menu_bar: "New menu bar"
+        name: "Name"
+        description: "Short description"
+        css_class: "CSS class"

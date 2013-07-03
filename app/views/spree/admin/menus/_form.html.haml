@@ -25,7 +25,7 @@
   %em= t("spree.admin.menus.explain_visible")
   = error_message_on :menu, :visible
 
-%h3 Opcjonalnie
+%h3= t('.optional')
 - if Spree::Menu.all.count > 0 #and false#turn off for futher improvement
   = form.field_container :parent_id do
     = form.label :parent_id, t('spree.admin.menus.parent_id')
@@ -42,6 +42,6 @@
   = form.field_container :spree_page_id do
     = form.label :spree_page_id, t('spree.admin.menus.page_id')
     %br
-    = collection_select(:menu,:page_id,Spree::Page.visible, :id, :name, :prompt => t("spree.admin.menus.select_page_id"), :include_blank => true)
+    = collection_select(:menu,:page_id, Spree::Page.visible, :id, :title, :prompt => t("spree.admin.menus.select_page_id"))
     %em= t("spree.admin.menus.explain_page_id")
     = error_message_on :menu, :page_id
